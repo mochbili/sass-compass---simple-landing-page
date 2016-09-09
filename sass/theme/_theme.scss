@@ -1,0 +1,161 @@
+/*=============================================>>>>>
+= Theme =
+===============================================>>>>>*/
+
+/* typography */
+
+body{
+  color: $color-text;
+  font-family: $font-1;
+}
+
+a{
+  color: $color-link;
+  &:hover{
+    color: $color-link-hover;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 21px;
+  color: $color-dark-text;
+  font-family: $font-2;
+  font-weight: normal;
+}
+
+h1{
+  font-size: 53px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 2.25rem;
+}
+
+h3{
+  font-size: 2rem;
+  color: $color-light-text;
+}
+
+h4{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h5{
+  font-family: $font-1;
+  font-size: .75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h6{
+  font-family: $font-1;
+  font-size: .444rem;
+}
+
+blockquote cite{
+  color: $color-light-text;
+}
+
+/* layout */
+
+.t-margin{
+  margin-bottom: $general-margin;
+}
+
+/* header */
+
+.t-beveled{
+  border-bottom: 4px solid #FAFAFA;
+  @include box-shadow(0 2px 5px 0 rgba(0,0,0,.4) inset);
+}
+
+.logo a{
+  color: $color-text;
+  font-family: $font-1;
+}
+
+.t-main-banner{
+  background-color: $color-banner;
+  @include box-shadow(0 -4px 0 0 rgba(0,0,0,.2) inset);
+  h1, h3, p{
+    color: #FFFFFF;
+    @include text-shadow(1px 1px 3px rgba(0,0,0,0.3));
+  }
+  hr{
+    width: 75%;
+    color: rgba(225,225,225,.4);
+  }
+}
+
+/* button */
+
+.btn{
+  background-color: $color-1;
+  color: $color-text;
+  border-color: darken($color-1, 20%);
+  @include box-shadow(0 -2px 0 0 darken($color-1, 20%) inset);
+  &:hover{
+    background: darken($color-1, 5%);
+  }
+}
+
+.btn-primary{
+  background-color: $color-link;
+  color: #ffffff;
+  border-color: darken($color-link, 20%);
+  @include box-shadow(0 -2px 0 0 darken($color-link, 20%) inset);
+  &:hover{
+    background: darken($color-link, 5%);
+  }
+}
+
+.btn-secondary{
+  background-color: $color-2;
+  color: #ffffff;
+  border-color: darken($color-2, 20%);
+  @include box-shadow(0 -2px 0 0 darken($color-2, 20%) inset);
+  &:hover{
+    background: darken($color-2, 5%);
+  }
+}
+
+/* list */
+
+.l-image-well{
+  background-color: $color-hr;
+  @include border-radius(3px);
+  img{
+    margin-top: 1rem;
+  }
+}
+
+.l-list-devided li:last-child{
+  border-left: 1px solid $color-hr;
+}
+
+/* call to action */
+
+.t-callout{
+  background-color: $color-callout;
+  h2{
+    margin-top: 0;
+    color: #ffffff;
+  }
+  h3{
+    margin: 0;
+  }
+}
+
+.cto-button{
+  padding-top: 20px;
+}
+
+/* footer */
+
+.social-icon{
+  background-color: $color-hr;
+  color: $color-light-text;
+  @include border-radius(3px);
+}

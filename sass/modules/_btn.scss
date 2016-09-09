@@ -1,0 +1,14 @@
+/*=============================================>>>>>
+= Button =
+===============================================>>>>>*/
+
+.btn{
+  display: inline-block;
+  height: 4rem;
+  width: 11rem;
+  outline: none;
+  padding: 0 1rem;
+  border: 1px solid;
+  font-size: 18px;
+  @include border-radius(3px);
+}

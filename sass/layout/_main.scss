@@ -1,0 +1,26 @@
+/*=============================================>>>>>
+= Main =
+===============================================>>>>>*/
+
+.l-list-unstyled{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.l-image-well{
+  height: 6.5rem;
+  width: 6.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+  @include float-left;
+}
+
+.l-text-well{
+  margin: 0 0 0 8rem;
+}
+
+.l-callout{
+  padding: 3rem;
+  @include border-radius(5px);
+}
